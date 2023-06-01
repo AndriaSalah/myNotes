@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/custom_note_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    >
+    <TextView
+        android:id="@+id/noteCellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/noteCellDescription"
+        android:layout_width="wrap_content"
+        android:maxWidth="390dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:fontFamily="sans-serif-light"
+        android:text="Description"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        />
+    <ImageButton
+        android:layout_marginTop="8dp"
+        android:id="@+id/deleteNote"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_delete"
+        android:background="@drawable/custom_button"
+        android:layout_gravity="end"
+        android:tooltipText="delete"
+        android:contentDescription="delete"
+        />
+
+</LinearLayout>
